@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import {Link} from 'react-router-dom'
 import axios from 'axios'
 
 export default class CountryDetails extends Component {
@@ -49,7 +50,10 @@ export default class CountryDetails extends Component {
                             this.state.infoCountry.borders ? this.state.infoCountry.borders.map(
                                 (border) => {
                                     return (
-                                    <li><a href={`/${border}`}>{border}</a></li>
+                                      <li>
+                                        <Link to={`/${border}`}>{border}
+                                        </Link>
+                                        </li>
                                     )
                                 }
                             )
