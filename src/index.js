@@ -1,13 +1,20 @@
+// 1. IMPORTACIONES - No importa el orden
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import 'bootstrap/dist/css/bootstrap.css';
 import * as serviceWorker from './serviceWorker';
 
+
+// 2. FUNCIONES O CLASES
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>  
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </BrowserRouter>
+  ,
   document.getElementById('root')
 );
 
