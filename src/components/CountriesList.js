@@ -13,7 +13,7 @@ export default class CountriesList extends Component {
                     this.props.allCountries.map((country) => {
                         return (
                             <Link to={location => ({...location, pathname:`/${country.alpha3Code}`})} class="list-group-item list-group-item-action">
-                                <img src={country.flag} style={{width:"15px"}} />
+                                <img src={country.flag} style={{width:"15px"}} alt="" />
                                 <span> </span>{country.name}
                             </Link>
                         )
